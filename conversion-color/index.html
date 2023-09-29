@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Color de DIV</title>
+     <!-- Incluir Bootstrap CSS desde un CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <!-- Incluir la biblioteca color-convert desde un CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/color-convert@2.0.1/dist/index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Mi Aplicación de Cambio de Color</h1>
+        <p>Selecciona un color y visualiza sus valores en diferentes formatos.</p>
+    </header>
+
+    <!-- Contenedor principal con Bootstrap -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Cambia el color del DIV</h2>
+                <input type="color" id="colorPicker" class="form-control mb-3">
+                <div id="coloredDiv" style="width: 200px; height: 200px; background-color: #000;"></div>
+            </div>
+            <div class="col-md-6">
+                <!-- Campos de texto para mostrar los valores -->
+                <label for="rgbValue">RGB:</label>
+                <input type="text" id="rgbValue" class="form-control mb-2" readonly>
+                <label for="hslValue">HSL:</label>
+                <input type="text" id="hslValue" class="form-control mb-2" readonly>
+                <label for="hexValue">HEX:</label>
+                <input type="text" id="hexValue" class="form-control mb-2" readonly>
+                <label for="hslaValue">HSLA:</label>
+                <input type="text" id="hslaValue" class="form-control mb-2" readonly>
+                <label for="cmykValue">CMYK:</label>
+                <input type="text" id="cmykValue" class="form-control mb-2" readonly>
+                <label for="hwbValue">HWB:</label>
+                <input type="text" id="hwbValue" class="form-control mb-2" readonly>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+<script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+    <footer class="fixed-bottom bg-success text-white">
+        <div class="container">
+
+            <p class="text-center">Citlali Martínez Sánchez</p>
+        </div>
+    </footer>
+
+    
+    
+</body>
+</html>
